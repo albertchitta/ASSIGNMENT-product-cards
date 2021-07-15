@@ -1,0 +1,26 @@
+.flex { 
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.card {
+  box-shadow: 1px 1px lightblue;
+  border: 1px solid lightblue;
+  margin: 40px;
+  padding: 10px;
+}
+
+h2 {
+  border: 1px solid lightblue;
+  text-align: center;
+  margin: auto;
+}
+
+img {
+  text-align: center;
+}
+
+.descr {
+  text-align: justify;
+}
