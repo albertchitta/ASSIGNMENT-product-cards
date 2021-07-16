@@ -1,26 +1,65 @@
-.flex { 
+/* Additional style requirements
+The entire card has a box shadow. COMPLETE
+The card title has a solid 1px border that is lightblue. COMPLETE
+The title and product image are centered. COMPLETE
+Notice that the text for the description in the image is justified. COMPLETE
+The text for the product specification details and pricing details is bold. COMPLETE
+The availability element extends the full width of the card, with a dark grey background and yellow text. COMPLETE */
+
+.products { 
   display: flex;
   flex-wrap: wrap;
-  margin: auto;
 }
 
 .card {
-  box-shadow: 1px 1px lightblue;
+  box-shadow: 10px 10px 5px gray;
   border: 1px solid lightblue;
-  margin: 40px;
+  margin: 10px;
   padding: 10px;
+  width: 250px;
+  min-width: 250px;
+  flex: 1 25%;
+  font-family: 'Open Sans', sans-serif;
 }
 
 h2 {
   border: 1px solid lightblue;
+  border-style: dotted;
   text-align: center;
+  margin: -10px;
+  padding: 10px;
+}
+
+p {
+  font-weight: bold;
   margin: auto;
+  font-size: small;
+  margin-left: 10px;
 }
 
 img {
   text-align: center;
+  max-width: 100%;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 .descr {
   text-align: justify;
+  font-weight: normal;
+  font-size: medium;
+  margin: auto;
+}
+
+.avail {
+  background-color: darkgray;
+  color: yellow;
+  padding: 2px;
+  margin: 12px -10px 12px -10px;
+  font-size: medium;
+}
+
+footer {
+  margin: 0px -10px 12px -10px;
+  font-size: smaller;
 }
