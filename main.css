@@ -9,6 +9,7 @@ The availability element extends the full width of the card, with a dark grey ba
 .products { 
   display: flex;
   flex-wrap: wrap;
+  margin: 10px 100px;
 }
 
 .card {
@@ -17,7 +18,7 @@ The availability element extends the full width of the card, with a dark grey ba
   margin: 10px;
   padding: 10px;
   width: 250px;
-  min-width: 250px;
+  min-width: 350px;
   flex: 1 25%;
   font-family: 'Open Sans', sans-serif;
 }
