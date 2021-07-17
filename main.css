@@ -37,11 +37,42 @@ p {
   margin-left: 10px;
 }
 
-img {
+/*.img {
   text-align: center;
   max-width: 100%;
   padding-top: 20px;
   padding-bottom: 10px;
+}*/
+
+.images {
+  position: relative;
+}
+
+.img1 {
+  text-align: center;
+  max-width: 100%;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+/*.img1 {
+  text-align: center;
+  max-width: 50%; 
+  height: auto;
+  padding: 20px 70px 20px 70px;
+  position: relative;
+  object-fit: cover;
+}*/
+
+.img2 {
+  text-align: center;
+  /* max-width: 150%; */
+  min-width: 250px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  position: absolute;
+  top: 5%;
+  left: -20%;
 }
 
 .descr {
