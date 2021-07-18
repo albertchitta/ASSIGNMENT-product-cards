@@ -6,10 +6,16 @@ Notice that the text for the description in the image is justified. COMPLETE
 The text for the product specification details and pricing details is bold. COMPLETE
 The availability element extends the full width of the card, with a dark grey background and yellow text. COMPLETE */
 
+body {
+  background-color: #303F9F;
+}
+
 .products { 
   display: flex;
   flex-wrap: wrap;
   margin: 10px 100px;
+  background-color: #FFFFFF;
+  position: absolute;
 }
 
 .card {
@@ -17,14 +23,20 @@ The availability element extends the full width of the card, with a dark grey ba
   border: 1px solid lightblue;
   margin: 10px;
   padding: 10px;
-  width: 250px;
   min-width: 350px;
-  flex: 1 25%;
   font-family: 'Open Sans', sans-serif;
+}
+
+/* max of 3 cards per row */
+@media(min-width : 350px) {
+  .card {
+    flex: 1 25%;
+  }
 }
 
 h2 {
   border: 1px solid lightblue;
+  height: 50px;
   border-style: dotted;
   text-align: center;
   margin: -10px;
@@ -46,7 +58,7 @@ p {
 .img1 {
   display: block;
   margin: 20px auto 10px auto;
-  width: 100%;
+  width: 60%;
   height: 200px;
   object-fit: contain; /*prevents stretch*/
 }
@@ -67,11 +79,21 @@ p {
   font-weight: normal;
   font-size: medium;
   margin: auto;
+  padding-top: 20px;
+  height: 100px;
 }
 
 .avail {
   background-color: darkgray;
   color: yellow;
+  padding: 2px;
+  margin: 12px -10px 12px -10px;
+  font-size: medium;
+}
+
+.unavail {
+  background-color: darkgray;
+  color: red;
   padding: 2px;
   margin: 12px -10px 12px -10px;
   font-size: medium;
