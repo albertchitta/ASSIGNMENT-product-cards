@@ -7,15 +7,16 @@ The text for the product specification details and pricing details is bold. COMP
 The availability element extends the full width of the card, with a dark grey background and yellow text. COMPLETE */
 
 body {
-  background-color: #303F9F;
+  background-color: #C5CAE9;
 }
 
 .products { 
   display: flex;
   flex-wrap: wrap;
-  margin: 10px 100px;
-  background-color: #FFFFFF;
-  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin: 0 auto;
+  max-width: 1400px;
 }
 
 .card {
@@ -25,12 +26,14 @@ body {
   padding: 10px;
   min-width: 350px;
   font-family: 'Open Sans', sans-serif;
+  background-color: #FFFFFF;
 }
 
 /* max of 3 cards per row */
-@media(min-width : 350px) {
+@media(min-width: 350px) {
   .card {
-    flex: 1 25%;
+    flex: 0 25%;
+    flex-grow: 1;
   }
 }
 
@@ -41,6 +44,7 @@ h2 {
   text-align: center;
   margin: -10px;
   padding: 10px;
+  color: #303F9F;
 }
 
 p {
