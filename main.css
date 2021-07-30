@@ -16,7 +16,9 @@ body {
   top: 0px;
   left: 0px;
   margin: 0 auto;
-  max-width: 1400px;
+  justify-content: center;
+  min-width: 350px;
+  max-width: 1600px;
 }
 
 .card {
@@ -25,6 +27,7 @@ body {
   margin: 10px;
   padding: 10px;
   min-width: 350px;
+  max-width: 25%;
   font-family: 'Open Sans', sans-serif;
   background-color: #FFFFFF;
 }
@@ -35,6 +38,13 @@ body {
     flex: 0 25%;
     flex-grow: 1;
   }
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  color: #303F9F;
+  font-family: 'Open Sans', sans-serif;
 }
 
 h2 {
